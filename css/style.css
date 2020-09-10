@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* .header-left {
+  float: left;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.header-right {
+  float: right;
+  padding-top: 42px;
+}
+
+.header-left > img {
+  max-height: 72px;
+}
+
+.header-list {
+  list-style: none;
+  display: block;
+}
+
+.header-list > li{
+  float: left;
+} */
+
+header > .container > .header-grid {
+  display: grid;
+  grid-template: "...   ...   ...   ...   ...   ...   ...   ...   ..." 21px
+                 "logo  ...   ...   ...   ...   ...   ...   ...   ..." 20px
+                 "logo  ... icon1   ...   icon2 ...   icon3 ...   icon4" 1fr
+                 "logo  ...   ...   ...   ...   ...   ...   ...   ..." 20px
+                 "...   ...   ...   ...   ...   ...   ...   ...   ..." 21px
+                 /auto  1fr   40px  10px  40px  10px  40px  10px  40px;
+}
+
+.icon {
+  border-radius: 100%;
+}
+
+.logo {
+  grid-area: logo;
+  max-height: 72px;
+}
+
+.icon1 {
+  grid-area: icon1;
+}
+
+.icon2 {
+  grid-area: icon2;
+}
+
+.icon3 {
+  grid-area: icon3;
+}
+
+.icon4 {
+  grid-area: icon4;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.header-nav-list > li {
+  list-style: none;
+  width: 100%;
+  font-size: 20px;
+  border-right: 2px solid #ccc;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header-nav-list > li.header-nav-list-content {
+  border-left: 2px solid #ccc;
+}
+
+.header-nav-list > li > a {
+  text-decoration: none;
+  color: #A9A9A9;
+}
+.content {
+  position: relative;
+  border: 2px solid #B81A1F;
+  padding-left: 145px;
+  line-height: 36px;
+}
+
+.notice-panel{
+  margin-bottom: 25px;
+}
+
+.notice-panel > .container > .content > a > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #B81A1F;
+  border: 1px solid #B81A1F;
+  color: #ffffff;
+  width: 130px;
+  text-align: center;
+  display: inline-block;
+}
+
+.notice-panel > .container > .content > a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.slider {
+  margin-bottom: 30px;
+}
+
+.video-block {
+  margin-bottom: 30px;
+}
+
+.food-menu {
+  margin-bottom: 40px;
+}
+
+.row {
+  margin-right: -14px;
+  margin-left: -14px;
+}
+
+.link-image {
+  width: 30%;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-bottom: 28px;
+}
+
+.find-shop {
+  margin-bottom: 40px;
+}
+
+.find-shop-image {
+  width: 100%;
+}
+
+.news-section {
+  height: 380px;
+  padding-top: 30px;
+  background-color: #A9A9A9;
+  color: #ffffff;
+  border-bottom: 2px solid #fff;
+}
+
+.news-left {
+  float: left;
+  margin-bottom: 30px;
+  max-width: 402px;
+  width: 45%;
+}
+
+.news-right {
+  float: right;
+  margin-bottom: 30px;
+  max-width: 402px;
+  width: 45%;
+}
+
+.title-image {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.hidden {
+  width: 100%;
+  max-height: 100%;
+}
+
+.news-content {
+  text-align: justify;
+}
+
+.news-item {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.btn-news {
+  display: block;
+  width: 100%;
+  height: 46px;
+  line-height: 40px;
+  background: #99C628;
+  text-align: center;
+}
+
+.stage-image {
+  width: 100%;
+  height: 150px;
+}
+
+footer {
+  padding-bottom: 50px;
+}
+
+.footer-hidden {
+  padding-top: 25px;
+}
+
+.footer-logo {
+  width: 160px;
+  float: left;
+}
+
+.footer-logo-image {
+  width: 160px;
+  vertical-align: middle;
+}
+
+.footer-logo-social {
+  text-align: right;
+  margin-top: 8px;
+}
+
+.footer-nav {
+  float: left;
+  width: 720px;
+  margin-left: 20px;
+}
+
+.main-nav {
+  height: 28px;
+  line-height: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav > li {
+  float: left;
+  border-right: 1px solid #8c8c8c;
+  padding: 0 15px;
+  float: left;
+}
+
+.sub-nav {
+  height: 35px;
+  line-height: 35px;
+  font-size: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-nav > li {
+  padding-left: 0;
+  border-right: none;
+  padding: 0 8px;
+  float: left;
+}
+
+.brand-link {
+  color: #b91a1f !important;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 18px;
+}
